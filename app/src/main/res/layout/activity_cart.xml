@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent"
+    tools:context=".activities.CartActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8E8A8A">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/backBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/checkOutList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar"
+        android:layout_margin="18dp"/>
+
+        <LinearLayout
+            android:id="@+id/couponHori"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/checkOutList"
+            android:background="@drawable/grey_background"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Enter Promo Code"
+                android:paddingStart="16dp"
+
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addtocartBTN"
+                style="@android:style/Widget.Button"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/greenbtn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:text="Apply" />
+        </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/couponHori"
+                    android:background="@drawable/buttonbg"
+                    android:text="Check-Out"
+                    android:id="@+id/checkout"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+    </RelativeLayout>
+</ScrollView>

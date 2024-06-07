@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "95113180510",
+    "project_id": "mye-project-f0812",
+    "storage_bucket": "mye-project-f0812.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95113180510:android:6504c461b5d721c38a8bcf",
+        "android_client_info": {
+          "package_name": "com.example.watch_hub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATRisM8jSeoXnf4E7Ad9Hsp0RL7hZJAx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

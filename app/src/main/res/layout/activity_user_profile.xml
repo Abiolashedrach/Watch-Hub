@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".activities.userProfileActivity">
+
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="150dp"
+                android:id="@+id/profilepic"
+                android:background="@drawable/no_profile_pic"/>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/profilepic"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ShowFullName"
+                android:layout_below="@id/profilepic"
+                android:layout_alignStart="@+id/profile"
+                android:hint="Loading....."
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="50dp"
+                android:textSize="18sp"/>
+               <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ShowLastName"
+                android:layout_below="@id/profilepic"
+                android:layout_alignStart="@+id/profile"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="50dp"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/Divider"
+                android:layout_below="@id/ShowLastName"
+                android:background="@android:color/darker_gray"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ShowEmail"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/Divider"
+                android:background="@drawable/ic_email"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ShowEmailAd"
+                android:hint="Loading....."
+                android:layout_below="@id/Divider"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:layout_alignStart="@id/ShowEmail"
+                android:layout_marginStart="50dp"
+                android:textSize="18sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/Divideremail"
+                android:layout_below="@id/ShowEmailAd"
+                android:background="@android:color/darker_gray"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ShowGender"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/Divideremail"
+                android:background="@drawable/ic_gender"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ShowGenderAd"
+                android:hint="Loading....."
+                android:textColorHint="@color/white"
+                android:layout_below="@id/Divideremail"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_alignStart="@id/ShowGender"
+                android:layout_marginStart="50dp"
+                android:textSize="18sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/Dividergender"
+                android:layout_below="@id/ShowGenderAd"
+                android:background="@android:color/darker_gray"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ShowPhone"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/Dividergender"
+                android:background="@drawable/ic_mobile"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ShowPhoneAd"
+                android:hint="Loading....."
+                android:textColorHint="@color/white"
+                android:layout_below="@id/Dividergender"
+                android:layout_marginTop="20dp"
+                android:layout_alignStart="@id/ShowPhone"
+                android:layout_marginStart="50dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/DividerPhone"
+                android:layout_below="@id/ShowPhoneAd"
+                android:background="@android:color/darker_gray"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/DividerPhone"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/buttonbg"
+        android:text="Delete Account"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:id="@+id/deleteAccount"/>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:visibility="gone" />
+
+
+
+</RelativeLayout>

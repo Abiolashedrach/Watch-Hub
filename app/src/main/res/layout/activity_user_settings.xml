@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".activities.Registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+  >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:textStyle="bold|italic"
+            android:textSize="35dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFF"/>
+        <EditText
+            android:id="@+id/oldPass"
+            android:layout_below="@id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/round_back_dark_blue5"
+            android:drawablePadding="20dp"
+            android:layout_margin="20dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:paddingLeft="20dp"
+            android:textAlignment="viewStart"
+            android:inputType="text"
+            android:hint="OLD PASSWORD"
+            android:textColorHint="#000"
+            />
+        <EditText
+            android:layout_below="@id/oldPass"
+            android:id="@+id/newPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/round_back_dark_blue5"
+            android:drawablePadding="20dp"
+            android:layout_margin="20dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:paddingLeft="20dp"
+            android:textAlignment="viewStart"
+            android:inputType="text"
+            android:hint="NEW PASSWORD"
+            android:textColorHint="#000"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_below="@id/newPass"
+            android:id="@+id/updatePass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/actionbtn"
+            android:padding="5dp"
+            android:text="Update Password"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Change Email"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/changetxt"
+            android:layout_below="@id/updatePass"/>
+
+
+        <EditText
+            android:id="@+id/OldEmail"
+            android:layout_below="@id/changetxt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/round_back_dark_blue5"
+            android:drawablePadding="20dp"
+            android:layout_margin="20dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_email"
+            android:paddingLeft="20dp"
+            android:textAlignment="viewStart"
+            android:inputType="text"
+            android:hint="Old Email Address"
+            android:textColorHint="#000"
+            />
+        <EditText
+            android:id="@+id/newEmail"
+            android:layout_width="match_parent"
+            android:layout_below="@id/OldEmail"
+            android:layout_height="50dp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/round_back_dark_blue5"
+            android:drawablePadding="20dp"
+            android:layout_margin="20dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_email"
+            android:paddingLeft="20dp"
+            android:textAlignment="viewStart"
+            android:inputType="phone"
+            android:hint="New Password"
+            android:textColorHint="#000"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_below="@id/newEmail"
+            android:id="@+id/updateEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/actionbtn"
+            android:padding="5dp"
+            android:text="Update Email"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

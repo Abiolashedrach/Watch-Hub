@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activities.Deleteaccount">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Delete Account"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/round_back_dark_blue5"
+        android:drawablePadding="20dp"
+        android:layout_margin="20dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_email"
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:inputType="text"
+        android:hint="Email Address"
+        android:textColorHint="#000"
+        />
+
+    <EditText
+        android:layout_below="@id/oldPass"
+        android:id="@+id/Pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/round_back_dark_blue5"
+        android:drawablePadding="20dp"
+        android:layout_margin="20dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:inputType="text"
+        android:hint="PASSWORD"
+        android:textColorHint="#000"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/DividerPhone"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/buttonbg"
+        android:text="Delete Account"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:id="@+id/deleteAccount"/>
+
+
+</LinearLayout>
